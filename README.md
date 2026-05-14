@@ -14,8 +14,8 @@ Anchor-based Regularization: An adaptive architectural constraint ($\lambda$) th
 
 🛠️ Environment Setup
 
-# Clone the repository
-git clone [https://github.com/YourUsername/RGDA.git](https://github.com/YourUsername/RGDA.git)
+# zenodo
+https://doi.org/10.5281/zenodo.20155296
 cd RGDA
 
 # Create conda environment
@@ -44,15 +44,15 @@ data/
 
 1. Run RGDA (Ours)
 
-To evaluate the proposed RGDA framework on ResNet50 under severe noise (Level 3):
+To evaluate the proposed RGDA framework on ConvNeXt under severe noise (Level 3):
 
 python evaluate_RGDA.py \
     --test_data_dir ./data/SWRD/level3 \
-    --model_path ./weights/resnet50.pth \
+    --model_path ./convtextrun_best_model.pth \
     --model_name resnet50 \
     --tta_lr 1e-3 \
     --e_margin 0.9 \
-    --fisher_alpha 0.0
+    --fisher_alpha 0.1
 
 
 2. Run Baseline Methods
@@ -69,4 +69,4 @@ Other baselines (Tent,CoTTA, SAR, EATA) can be executed similarly using their re
 
 📧 Contact
 
-For any questions, please feel free to open an issue or contact [Your Email Address].
+For any questions, please feel free to open an issue or contact xiedetian@mail.shiep.edu.cn.
